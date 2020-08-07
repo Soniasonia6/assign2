@@ -1,0 +1,12 @@
+//-
+    File Name: error.pug
+    Author's Name: Sonia Sonia 
+    Website Name: Sonia Golden Temple in india
+    File Description: This file appear when in website any error related to pages
+
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}

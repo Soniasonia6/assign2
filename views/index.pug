@@ -1,0 +1,30 @@
+//-
+    File Name: index.pug
+    Author's Name: Sonia Sonia
+    Website Name: Sonia Golden Temple In India
+    File Description: This file contain all the coding for home page in pug
+
+extends layout
+
+block content 
+      
+   .parallax
+    //This class used to do parallax
+    div(style='height:500px;font-size:36px;background-image:url("../images/test.jpeg"); background-attachment:fixed; background-repeat:no-repeat; font-weight:bold; text-align: center;')
+      | Hi, I am a computer Programmer student.
+      br
+      | This is my Website about my favourite and famous historical place of Golden Temple In India
+      br
+      | I develop this website by using node.js and express.js.
+
+      p I really like this place, it gives me peace.
+
+        
+
+
+    .parallax
+    include about
+    include history
+    include importance
+    include contact.pug
+    include ./partials/footer

@@ -1,0 +1,49 @@
+//-
+    File Name: contact.pug
+    Author's Name: Sonia Sonia
+    Website Name:Sonia Golden Temple
+    File Description: This file contain all the coding for contact page in pug
+
+
+//- In this page, I make a working contact from with the help of nodemailer and body-parser and also apply animation with some styles.
+extends layout
+
+block content
+
+  .contact    
+    .container
+      h1.brand
+        span Golden Temple
+        |  in India
+      .wrapper.animated.bounceInLeft
+        .company-info
+          h3 Golden Temple In India
+          ul
+            li
+              i.fa.fa-road
+              |  Golden Temple Rd, Atta Mandi, Katra Ahluwalia, Amritsar, Punjab 143006, India
+            li
+              i.fa.fa-phone
+              |  +91 183 255 3957
+            
+        .contact
+          h3 Conatct 
+          h4= msg
+          form(method='POST', action='send')
+            p
+              label Name
+              input(type='text', name='name')
+          
+            p
+              label Email Address
+              input(type='email', name='email')
+            p
+              label Phone Number
+              input(type='text', name='phone')
+            p.full
+              label Message
+              textarea(name='message', rows='5')
+            p.full
+              button(type='submit') Submit
+
+

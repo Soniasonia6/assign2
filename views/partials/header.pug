@@ -1,0 +1,23 @@
+//-
+    File Name: header.pug
+    Author's Name: Sonia Sonia
+    Website Name: Sonia Golden Temple
+    File Description: This file contain all the header and navigation coding  in pug
+
+mixin navLink(text, location)
+    li.nav-item
+        a.nav-link(href=location)= text
+
+nav.navbar.fixed-top.navbar-dark.bg-dark(style='background-color: red;')
+    a.navbar-brand(href='#') Sonia Sonia
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+        ul.navbar-nav.mr-auto.mt-2.mt-lg-0(style='background-color: #696969; font-size:25px; font-weight:bold;')
+            +navLink('Home', '/')
+            +navLink('About','/about')
+            +navLink('History','/history')
+            +navLink('Importance','/importance')
+            +navLink('Contact','/contact')  
+
+              
